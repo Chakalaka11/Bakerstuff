@@ -87,7 +87,7 @@
   <ItemGroup>
     <Content Include="Reg_form.aspx" />
     <Content Include="Recepie-Cons.aspx" />
-    <Content Include="Recepie.aspx" />
+    <Content Include="Default.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -118,12 +118,12 @@
     <Compile Include="Recepie-Cons.aspx.designer.cs">
       <DependentUpon>Recepie-Cons.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Recepie.aspx.cs">
-      <DependentUpon>Recepie.aspx</DependentUpon>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Recepie.aspx.designer.cs">
-      <DependentUpon>Recepie.aspx</DependentUpon>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="recepies.cs">
       <DependentUpon>Def_model.tt</DependentUpon>

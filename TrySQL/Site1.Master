@@ -24,13 +24,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="Recepie.aspx">Baker stuff</a>
+          <a class="navbar-brand" href="Default.aspx">Baker stuff</a>
           
         </div>
          
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="Log_in.aspx">Log in</a></li>
+            <li><a href="Reg_form.aspx">Sing up</a></li>
               <p class="navbar-text"><asp:Label ID="Label1" runat="server" Text="Not logged in." Font-Size="Medium"></asp:Label></p>
           </ul>
         </div>

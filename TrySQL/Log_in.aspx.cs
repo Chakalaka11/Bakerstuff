@@ -20,8 +20,13 @@ namespace TrySQL
             all_dataEntities a = new all_dataEntities();
             if (a.users.Find(TextBox1.Text, TextBox2.Text) != null)
             {
+                HttpCookie myCookie = new HttpCookie("User");
+                myCookie["Nickname"] = TextBox1.Text;
+                myCookie["Pass"] = TextBox2.Text;
+                myCookie.Expires = DateTime.Now.AddDays(1d);
+                Response.Cookies.Add(myCookie);
                 Session["Nickname"] = TextBox1.Text;
-                Response.Redirect("/Recepie.aspx");
+                Response.Redirect("/Default.aspx");
             }
             else 
             {
