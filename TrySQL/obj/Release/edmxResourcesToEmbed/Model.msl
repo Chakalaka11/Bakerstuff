@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="all_dataModelStoreContainer" CdmEntityContainer="all_dataEntities">
+    <EntitySetMapping Name="recepies">
+      <EntityTypeMapping TypeName="all_dataModel.recepies">
+        <MappingFragment StoreEntitySet="recepies">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="Recepie" ColumnName="Recepie" />
+          <ScalarProperty Name="Name_of_recepie" ColumnName="Name of recepie" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAvoTSjRpWBUKzga5znRfVlgAAAAACAAAAAAAQZgAAAAEAACAAAACr9Dr8vfI76uuGKpKN4xgYG6B5MyPjYng3aQir3JflHQAAAAAOgAAAAAIAACAAAABjFY7YVYnfXCNBPpFAoOUWC0colOAhrbDml58ffFPMaiAAAABPma7kgw8oP9S6HL0HHHz8tFH95JiARjvESEwO+60vuEAAAAAZypM8axuKa1c7u5QJ92Q7YB28rufwZw6lWvEb+5oG7RKHettUPFym1xxHFzvprTLWvx6B3bq+nL7rneXb1rxA</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>10/05/2015 12:32:40</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>10/05/2015 12:32:40</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.dll">
+      <publishTime>10/24/2015 01:39:23</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.Entity.EF6.dll">
+      <publishTime>10/24/2015 01:39:37</publishTime>
+    </File>
+    <File Include="bin/MySql.Web.dll">
+      <publishTime>10/24/2015 01:39:23</publishTime>
+    </File>
+    <File Include="bin/TrySQL.dll">
+      <publishTime>10/30/2015 18:59:15</publishTime>
+    </File>
+    <File Include="Def_model.edmx.diagram">
+      <publishTime>10/30/2015 01:08:10</publishTime>
+    </File>
+    <File Include="Log_in.aspx">
+      <publishTime>10/30/2015 18:35:27</publishTime>
+    </File>
+    <File Include="Model.edmx.diagram">
+      <publishTime>10/24/2015 02:30:08</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>10/24/2015 01:39:38</publishTime>
+    </File>
+    <File Include="Recepie-Cons.aspx">
+      <publishTime>10/18/2015 00:02:50</publishTime>
+    </File>
+    <File Include="Recepie.aspx">
+      <publishTime>10/17/2015 09:54:01</publishTime>
+    </File>
+    <File Include="Reg_form.aspx">
+      <publishTime>10/30/2015 01:41:21</publishTime>
+    </File>
+    <File Include="Site1.Master">
+      <publishTime>10/30/2015 17:40:48</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>10/30/2015 01:42:28</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

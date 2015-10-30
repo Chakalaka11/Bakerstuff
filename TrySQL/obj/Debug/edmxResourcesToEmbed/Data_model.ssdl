@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="All_DataModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="All_DataModelStoreContainer">
+    <EntitySet Name="Recepie" EntityType="All_DataModel.Store.Recepie" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Users" EntityType="All_DataModel.Store.Users" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK__Recepie__Author__239E4DCF" Association="All_DataModel.Store.FK__Recepie__Author__239E4DCF">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Recepie" EntitySet="Recepie" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Recepie">
+    <Key>
+      <PropertyRef Name="Author" />
+    </Key>
+    <Property Name="Author" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Recepie" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="NickName" />
+    </Key>
+    <Property Name="NickName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="PassWord" Type="nchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <Association Name="FK__Recepie__Author__239E4DCF">
+    <End Role="Users" Type="All_DataModel.Store.Users" Multiplicity="1" />
+    <End Role="Recepie" Type="All_DataModel.Store.Recepie" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="NickName" />
+      </Principal>
+      <Dependent Role="Recepie">
+        <PropertyRef Name="Author" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="bakerstuff" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\Projects\\TrySQL\\TrySQL\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\Projects\\TrySQL\\TrySQL\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="all_dataEntities-Web.config Connection String" description="" value="metadata=res://*/Model.csdl|res://*/Model.ssdl|res://*/Model.msl;provider=MySql.Data.MySqlClient;provider connection string=&quot;server=eu-cdbr-azure-north-d.cloudapp.net;user id=b7af2d2a41be9d;password=01fa6d8a;database=all_data;persistsecurityinfo=True&quot;" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\Projects\\TrySQL\\TrySQL\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='all_dataEntities']/@connectionString" />
+  </parameter>
+</parameters>

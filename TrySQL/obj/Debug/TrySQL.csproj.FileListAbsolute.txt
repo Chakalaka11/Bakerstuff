@@ -1,0 +1,12 @@
+D:\Projects\TrySQL\TrySQL\bin\TrySQL.dll
+D:\Projects\TrySQL\TrySQL\bin\TrySQL.pdb
+D:\Projects\TrySQL\TrySQL\bin\EntityFramework.dll
+D:\Projects\TrySQL\TrySQL\bin\EntityFramework.SqlServer.dll
+D:\Projects\TrySQL\TrySQL\bin\MySql.Data.dll
+D:\Projects\TrySQL\TrySQL\bin\MySql.Data.Entity.EF6.dll
+D:\Projects\TrySQL\TrySQL\bin\MySql.Web.dll
+D:\Projects\TrySQL\TrySQL\bin\EntityFramework.xml
+D:\Projects\TrySQL\TrySQL\bin\EntityFramework.SqlServer.xml
+D:\Projects\TrySQL\TrySQL\obj\Debug\TrySQL.csprojResolveAssemblyReference.cache
+D:\Projects\TrySQL\TrySQL\obj\Debug\TrySQL.dll
+D:\Projects\TrySQL\TrySQL\obj\Debug\TrySQL.pdb
