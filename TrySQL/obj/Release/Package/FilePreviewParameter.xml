@@ -4,7 +4,7 @@
     <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\Projects\\TrySQL\\TrySQL\\obj\\Release\\Package\\PackageTmp$" />
     <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\Projects\\TrySQL\\TrySQL\\obj\\Release\\Package\\PackageTmp$" />
   </parameter>
-  <parameter name="all_dataEntities-Web.config Connection String" description="" value="metadata=res://*/Model.csdl|res://*/Model.ssdl|res://*/Model.msl;provider=MySql.Data.MySqlClient;provider connection string=&quot;server=eu-cdbr-azure-north-d.cloudapp.net;user id=b7af2d2a41be9d;password=01fa6d8a;database=all_data;persistsecurityinfo=True&quot;" tags="">
+  <parameter name="all_dataEntities-Web.config Connection String" description="" value="metadata=res://*/Def_model.csdl|res://*/Def_model.ssdl|res://*/Def_model.msl;provider=MySql.Data.MySqlClient;provider connection string=&quot;server=eu-cdbr-azure-north-d.cloudapp.net;user id=b7af2d2a41be9d;password=01fa6d8a;persistsecurityinfo=True;database=all_data&quot;" tags="">
     <parameterEntry kind="XmlFile" scope="D:\\Projects\\TrySQL\\TrySQL\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='all_dataEntities']/@connectionString" />
   </parameter>
 </parameters>

@@ -85,7 +85,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Reg_form.aspx" />
+    <Content Include="Change.aspx" />
+    <Content Include="Registration.aspx" />
     <Content Include="Recepie-Cons.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Web.config">
@@ -95,6 +96,13 @@
     <Content Include="Log_in.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Change.aspx.cs">
+      <DependentUpon>Change.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Change.aspx.designer.cs">
+      <DependentUpon>Change.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Def_model.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -135,12 +143,12 @@
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
-    <Compile Include="Reg_form.aspx.cs">
-      <DependentUpon>Reg_form.aspx</DependentUpon>
+    <Compile Include="Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Reg_form.aspx.designer.cs">
-      <DependentUpon>Reg_form.aspx</DependentUpon>
+    <Compile Include="Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
     </Compile>
     <Compile Include="users.cs">
       <DependentUpon>Def_model.tt</DependentUpon>

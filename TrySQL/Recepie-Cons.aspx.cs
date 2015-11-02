@@ -21,7 +21,7 @@ namespace TrySQL
                 data.Add(item);
             }
            
-            int s = Convert.ToInt32(Request.QueryString["Article"])-1;
+            int s = Convert.ToInt32(Request.QueryString["Article"]);
             Label1.Text = data[s].Name_of_recepie;
             Label2.Text = data[s].Recepie;
             

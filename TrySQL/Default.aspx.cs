@@ -11,20 +11,19 @@ namespace TrySQL
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            all_dataEntities a = new all_dataEntities();
-        
-            
-            
-            
+            all_dataEntities a = new all_dataEntities();       
             var query = from recepies in a.recepies select recepies;
             List<recepies> ass = new List<recepies>();
             foreach(var item in query)
             {
-                
                 ass.Add(item);   
             }
             Repeater1.DataSource = ass;
             Repeater1.DataBind();
+            if (Session["Nickname"] == null)
+            {
+               
+            }
            
         }
     }

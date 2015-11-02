@@ -11,26 +11,39 @@ namespace TrySQL
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            try
+            if (Request.QueryString["Exit"] == "true")
             {
+                Response.Cookies["User"].Expires = DateTime.Now.AddDays(-1);
+                Session.Abandon();
+                Response.Redirect("Default.aspx");
+            }
+            else
+            {
+                try
+                {
 
-                if (Session["Nickname"] != null)
-                {
-                    Label1.Text = Session["Nickname"].ToString();
-                }
-                else
-                {
-                    string Co_n = Request.Cookies["User"]["Nickname"];
-                    string Co_p = Request.Cookies["User"]["Pass"];
-                    all_dataEntities a = new all_dataEntities();
-                    if (a.users.Find(Co_n, Co_p) != null)
+                    if (Session["Nickname"] != null)
                     {
-                        Session["Nickname"] = Co_n;
+                        Label1.Text = "Hello " + Session["Nickname"].ToString();
+                    }
+                    else
+                    {
+                        string Co_n = Request.Cookies["User"]["Nickname"];
+                        string Co_p = Request.Cookies["User"]["Pass"];
+                        using (all_dataEntities a = new all_dataEntities())
+                        {
+                            if (a.users.Find(Co_n, Co_p) != null)
+                            {
+                                Session["Nickname"] = Co_n;
+                            }
+                        }
+                        Label1.Text = "Hello " + Session["Nickname"].ToString();
+
                     }
                 }
-            }
-            catch (Exception)
-            {
+                catch (Exception)
+                {
+                }
             }
             
         }

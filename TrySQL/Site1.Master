@@ -30,8 +30,15 @@
          
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
+               <%if (Session["Nickname"] == null)
+            {%>
             <li><a href="Log_in.aspx">Log in</a></li>
-            <li><a href="Reg_form.aspx">Sing up</a></li>
+            <li><a href="Registration.aspx">Sing up</a></li>
+              <%}
+                else{ %>
+            <li><a href="Default.aspx?Exit=true">Log out</a></li>
+              
+              <%} %>
               <p class="navbar-text"><asp:Label ID="Label1" runat="server" Text="Not logged in." Font-Size="Medium"></asp:Label></p>
           </ul>
         </div>

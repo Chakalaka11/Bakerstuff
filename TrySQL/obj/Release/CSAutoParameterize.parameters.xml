@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="all_dataEntities-Web.config Connection String" description="all_dataEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Def_model.csdl|res://*/Def_model.ssdl|res://*/Def_model.msl;provider=MySql.Data.MySqlClient;provider connection string=&quot;server=eu-cdbr-azure-north-d.cloudapp.net;user id=b7af2d2a41be9d;password=01fa6d8a;persistsecurityinfo=True;database=all_data&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\Projects\\TrySQL\\TrySQL\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='all_dataEntities']/@connectionString" />
+  </parameter>
+</parameters>
