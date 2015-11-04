@@ -20,10 +20,7 @@ namespace TrySQL
             }
             Repeater1.DataSource = ass;
             Repeater1.DataBind();
-            if (Session["Nickname"] == null)
-            {
-               
-            }
+         
            
         }
     }

@@ -21,7 +21,11 @@
             }%>
             </div>
             <div class="panel-body">
-                <h5> <%# Eval("Recepie").ToString().Substring(0,10)%>...</h5>
+                <h5> <% 
+                         if (Eval("Recepie").ToString().Length <10)
+                         { Eval("Recepie").ToString(); }
+                            else
+                        {Eval("Recepie").ToString().Substring(0,10);}%>...</h5>
                 
                 <asp:HyperLink ID="HyperLink1" NavigateUrl='<%# "Recepie-Cons.aspx?Article=" + Eval("ID") %>' runat="server">Read more...</asp:HyperLink> 
             </div>
