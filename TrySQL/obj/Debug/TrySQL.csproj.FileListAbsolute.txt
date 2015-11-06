@@ -10,3 +10,5 @@ D:\Projects\TrySQL\TrySQL\bin\EntityFramework.SqlServer.xml
 D:\Projects\TrySQL\TrySQL\obj\Debug\TrySQL.csprojResolveAssemblyReference.cache
 D:\Projects\TrySQL\TrySQL\obj\Debug\TrySQL.dll
 D:\Projects\TrySQL\TrySQL\obj\Debug\TrySQL.pdb
+D:\Projects\TrySQL\TrySQL\bin\Newtonsoft.Json.dll
+D:\Projects\TrySQL\TrySQL\bin\Newtonsoft.Json.xml
